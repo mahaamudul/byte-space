@@ -1,4 +1,5 @@
 import Hero from "@/componets/home/Hero";
+import Carousel from "@/componets/home/Carousel";
 import Nav from "@/componets/shared/nav";
 
 
@@ -11,6 +12,7 @@ export default function Home() {
           <Hero></Hero>
         </div>
       </div>
+      <Carousel />
     </div>
   );
 }

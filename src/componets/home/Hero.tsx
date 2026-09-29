@@ -4,7 +4,7 @@ const assetPath = "/assets/hero/";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[calc(100vh-72px)] overflow-hidden bg-[#003be2] bg-[linear-gradient(to_right,rgba(255,255,255,0.12)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.12)_1px,transparent_1px)] bg-[size:90px_90px] text-white">
+    <section className="relative min-h-[calc(100vh-72px+120px)] overflow-hidden bg-[#003be2] bg-[linear-gradient(to_right,rgba(255,255,255,0.12)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.12)_1px,transparent_1px)] bg-[size:90px_90px] text-white">
       <Image
         src={`${assetPath}Mask Group.png`}
         alt=""
@@ -48,17 +48,17 @@ export default function Hero() {
         className="pointer-events-none absolute right-[14%] top-[46%] z-10 hidden w-24 md:block lg:w-32"
       />
 
-      <div className="relative z-20 mx-auto flex max-w-4xl flex-col items-center px-5 pb-0 pt-12 text-center sm:pt-14 lg:pt-10">
-        <h1 className="max-w-3xl font-clash-display text-4xl font-semibold leading-[1.05] tracking-[-0.04em] sm:text-5xl lg:text-[52px]">
+      <div className="relative z-20 mx-auto flex max-w-4xl flex-col items-center px-5 pb-24 pt-12 text-center sm:pt-14 lg:pt-10">
+        <h1 className="max-w-4xl font-poppins tracking-wide  text-4xl font-semibold leading-[1.05] tracking-[-0.04em] sm:text-5xl lg:text-[72px]">
           Get Access to Hundreds
           <br />
           Courses Available
         </h1>
-        <p className="mt-7 max-w-2xl text-xs font-light leading-6 text-white/90 sm:text-sm">
-          Unlock your creativity, gain valuable knowledge, and grow your business with our wide range of courses.
+        <p className="mt-7 font-satoshi max-w-2xl text-xs font-light leading-6 text-white/90 sm:text-sm">
+         Unlock your creativity, gain valuable knowledge, and grow your business with our wide range of courses.
         </p>
 
-        <form className="mt-10 flex w-full max-w-[438px] items-center gap-3">
+        <form className="mt-10 mb-12 flex w-full max-w-[438px] items-center gap-3">
           <label className="flex h-10 min-w-0 flex-1 items-center gap-2 rounded-full bg-white px-4 text-left text-xs text-[#7b8190]">
             <span aria-hidden="true" className="text-base leading-none">⌕</span>
             <input
@@ -74,7 +74,7 @@ export default function Hero() {
         </form>
       </div>
 
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-[46%] min-h-[330px]">
+      <div className="pointer-events-none mt-20 absolute inset-x-0 bottom-0 z-10 h-[46%] min-h-[330px]">
         <Image
           src={`${assetPath}Ellipse 7.png`}
           alt=""

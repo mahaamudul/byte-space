@@ -1,6 +1,7 @@
 import Hero from "@/componets/home/Hero";
 import Carousel from "@/componets/home/Carousel";
 import Nav from "@/componets/shared/nav";
+import DiscoverSection from "@/componets/home/DiscoverSection";
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
         </div>
       </div>
       <Carousel />
+      <DiscoverSection></DiscoverSection>
     </div>
   );
 }

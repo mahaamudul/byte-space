@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme inline {
+	--font-poppins: var(--font-poppins-next);
+	--font-satoshi: "Satoshi", sans-serif;
+	--font-clash-display: "Clash Display", sans-serif;
+}
+

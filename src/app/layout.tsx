@@ -1,5 +1,13 @@
 
 import "./globals.css";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ByteSpace",
+  icons: {
+    icon: "/assets/nav/logo%20.png",
+  },
+};
 
 
 

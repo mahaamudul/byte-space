@@ -40,12 +40,12 @@ const tagRows = Array.from({ length: rowCount }, (_, rowIndex) => {
 
 const DiscoverSection = () => {
   return (
-    <section className="mx-auto my-14 max-w-6xl px-4">
-      <h1 className="mb-4 text-center text-4xl font-bold text-gray-600">
+    <section className="mx-auto my-14 max-w-360 px-5 sm:px-8">
+      <h1 className="mb-4 text-center font-poppins text-4xl font-bold text-gray-600">
         Discover Your Passion, <br />Build Your Skills
       </h1>
 
-      <p className="mx-auto max-w-5xl text-center text-base text-gray-600">
+      <p className="mx-auto max-w-5xl font-satoshi text-center text-base text-gray-600">
         At Bytespace Courses, we bring you closer to life-changing knowledge. Explore a variety of courses across different fields, from technology to the arts, and make a difference in your career and life.
       </p>
 

@@ -26,7 +26,7 @@ const formatStudents = (students: number) =>
 
 const CourseCard = ({ course }: CourseCardProps) => {
   return (
-    <article className="w-full max-w-[358px] rounded-[22px] border border-[#dedede] bg-white p-4 text-[#171717] shadow-[0_2px_8px_rgba(0,0,0,0.03)]">
+    <article className="w-full max-w-[358px] rounded-[22px] border border-[#dedede] bg-white p-4 font-satoshi text-[#171717] shadow-[0_2px_8px_rgba(0,0,0,0.03)]">
       <div className="relative h-[196px] overflow-hidden rounded-[13px]">
         <Image
           src={course.coverImage}
@@ -49,7 +49,7 @@ const CourseCard = ({ course }: CourseCardProps) => {
       </div>
 
       <div className="mt-5 flex items-start justify-between gap-3">
-        <h2 className="line-clamp-2 text-[19px] font-semibold leading-[1.15] tracking-[-0.03em]">
+        <h2 className="line-clamp-2 font-poppins text-[19px] font-semibold leading-[1.15] tracking-[-0.03em]">
           {course.title}
         </h2>
         <span className="flex shrink-0 items-center gap-1 text-[17px] text-[#707070]">

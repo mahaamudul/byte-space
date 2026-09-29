@@ -1,4 +1,6 @@
 import Image from "next/image";
+import ActionButton from "../ui/ActionButton";
+import InputField from "../ui/InputField";
 
 const assetPath = "/assets/hero/";
 
@@ -59,18 +61,17 @@ export default function Hero() {
         </p>
 
         <form className="mt-10 mb-12 flex w-full max-w-[438px] items-center gap-3">
-          <label className="flex h-10 min-w-0 flex-1 items-center gap-2 rounded-full bg-white px-4 text-left text-xs text-[#7b8190]">
-            <span aria-hidden="true" className="text-base leading-none">⌕</span>
-            <input
-              type="search"
-              placeholder="Course, topic, creator"
-              aria-label="Search courses"
-              className="min-w-0 flex-1 bg-transparent outline-none placeholder:text-[#9b9eaa]"
-            />
-          </label>
-          <button type="submit" className="h-10 rounded-full bg-[#c7ff00] px-5 text-xs font-medium text-[#07143f] transition-transform hover:scale-105">
+          <InputField
+            type="search"
+            label="Search courses"
+            placeholder="Course, topic, creator"
+            showSearchIcon
+            wrapperClassName="h-10 flex-1 gap-2 rounded-full bg-white px-4 text-left text-xs text-[#7b8190]"
+            className="placeholder:text-[#9b9eaa]"
+          />
+          <ActionButton type="submit" className="h-10 px-5 text-xs text-[#07143f]">
             Search
-          </button>
+          </ActionButton>
         </form>
       </div>
 

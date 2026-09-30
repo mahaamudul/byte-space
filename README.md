@@ -1,6 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+ByteSpace
 
-## Getting Started
+![ByteSpace landing page](https://i.ibb.co.com/fGnmPKDc/image.png)
+
+ByteSpace is a responsive online learning platform interface for discovering courses, exploring learning paths, joining as a creator, and hearing from the community.
+
+## Tech Stack
+
+- Next.js 16 App Router
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- Next Image and optimized static assets
+
+## Requirements
+
+- Node.js 20.9 or newer
+- npm
+
+## Installation
+
+```bash
+git clone <repository-url>
+cd byte-space-frontend
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000).
+
+## Scripts
+
+| Command | Purpose |
+| --- | --- |
+| `npm run dev` | Start the development server |
+| `npm run build` | Create a production build |
+| `npm run start` | Serve the production build |
+| `npm run lint` | Run ESLint |
+
+## Routes
+
+- `/` - ByteSpace landing page
+- `/login` - Login page
+- `/register` - Registration page
+
+## Project Structure
+
+```text
+src/app/                  App Router pages and global styles
+src/componets/home/       Landing page sections
+src/componets/shared/     Navigation and footer
+src/componets/ui/         Reusable cards, buttons, and form controls
+public/assets/            Local illustrations and interface assets
+public/data/data.json     Course card data
+```
+
+## Development Notes
+
+Course and testimonial content is rendered from local data or component configuration. Images are served through `next/image`; external Unsplash sources are configured in `next.config.ts`.
 
 First, run the development server:
 

@@ -13,19 +13,19 @@ type TestimonialCardProps = {
 
 const TestimonialCard = ({ testimonial }: TestimonialCardProps) => {
   return (
-    <article className="flex min-h-[424px] w-full flex-col rounded-[24px] bg-white px-6 pb-7 pt-6 text-[#171717] shadow-[0_2px_8px_rgba(0,0,0,0.03)]">
+    <article className="flex min-h-[380px] w-full max-w-[380px] flex-col justify-self-center rounded-[20px] bg-white px-5 pb-6 pt-5 text-[#171717] shadow-[0_2px_8px_rgba(0,0,0,0.03)]">
       <Image
         src={testimonial.avatar}
         alt={testimonial.name}
-        width={80}
-        height={80}
-        className="size-20 rounded-full object-cover"
+        width={64}
+        height={64}
+        className="size-16 rounded-full object-cover"
       />
 
-      <h3 className="mt-6 font-poppins text-xl font-bold leading-tight">{testimonial.name}</h3>
-      <p className="mt-1 font-satoshi text-base text-[#003be2]">{testimonial.role}</p>
+      <h3 className="mt-5 font-poppins text-lg font-bold leading-tight">{testimonial.name}</h3>
+      <p className="mt-1 font-satoshi text-sm text-[#003be2]">{testimonial.role}</p>
 
-      <blockquote className="mt-7 font-satoshi text-lg leading-[1.6] text-[#606060]">
+      <blockquote className="mt-6 font-satoshi text-base leading-[1.55] text-[#606060]">
         &quot;{testimonial.quote}&quot;
       </blockquote>
     </article>

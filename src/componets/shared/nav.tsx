@@ -39,10 +39,10 @@ export default function Nav() {
 
         <div className="flex items-center gap-5 text-[11px] font-medium text-white">
           <a href="#sign-in" className="hidden transition-colors hover:text-white/70 sm:block">
-            Sign In
+            <Link href="/login">Sign In</Link>
           </a>
           <a href="#join-us" className="transition-colors hover:text-white/70">
-            Join Us
+            <Link href="/register">Join Us</Link>
           </a>
           <a
             href="#cart"

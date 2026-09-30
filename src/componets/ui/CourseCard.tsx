@@ -36,13 +36,13 @@ const CourseCard = ({ course }: CourseCardProps) => {
           className="object-cover"
         />
         <div className="absolute inset-x-3 bottom-3 flex items-center justify-between gap-2 text-[11px] text-[#4a4a4a]">
-          <span className="rounded-full bg-white/85 px-3 py-1.5 backdrop-blur-sm">
+          <span className="rounded-full bg-white/85 px-2 py-1.5 backdrop-blur-sm">
             {course.lessonsNumber} Lessons
           </span>
-          <span className="rounded-full bg-white/85 px-3 py-1.5 backdrop-blur-sm">
+          <span className="rounded-full bg-white/85 px-2 py-1.5 backdrop-blur-sm">
             {formatTime(course.totalTime)}
           </span>
-          <span className="rounded-full bg-white/85 px-3 py-1.5 backdrop-blur-sm">
+          <span className="rounded-full bg-white/95 px-2 py-1.5 backdrop-blur-sm">
             {course.totalComments} Comments
           </span>
         </div>
